@@ -1,0 +1,188 @@
+{
+    "name" : "shendh_mini_app",
+    "appid" : "__UNI__306C009",
+    "description" : "",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    "uniStatistics" : {
+        "enable" : false //全局关闭ubiapp统计，需要此功能记得配置白名单 
+    },
+    // 打开分包
+    "optimization" : {
+        "subPackages" : true // HBuilderX 2.7.12+ 支持
+    },
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {
+            "Payment" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {},
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "payment" : {
+                    "appleiap" : {},
+                    "alipay" : {},
+                    "weixin" : {
+                        "appid" : "17356563"
+                    }
+                }
+            }
+        },
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wxf30ebd420789bc4e",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : true,
+            "checkSiteMap" : false
+        },
+        "optimization" : {
+            "subPackages" : true
+        },
+        "plugins" : {},
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "你的位置信息将用于小程序位置接口的效果展示"
+            }
+        },
+        "requiredPrivateInfos" : [ "getLocation" ],
+        "lazyCodeLoading" : "requiredComponents",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-alipay" : {
+        "usingComponents" : true,
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-baidu" : {
+        "usingComponents" : false,
+        "appid" : "17356563",
+        "setting" : {
+            "urlCheck" : true,
+            "es6" : true,
+            "postcss" : true,
+            "minified" : false
+        },
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true,
+        "setting" : {
+            "es6" : true,
+            "postcss" : true,
+            "minified" : false,
+            "urlCheck" : false
+        },
+        "appid" : "tt9ea2e81f01886250",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "h5" : {
+        "title" : "",
+        "template" : "", //index.html模板路径，相对于应用根目录，可定制生成的 html 代码
+        "router" : {
+            "mode" : "hash",
+            "base" : ""
+        },
+        "domain" : "https://bbm.loovee.com/",
+        "devServer" : {
+            "https" : false,
+            "port" : ""
+        },
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : false
+            }
+        },
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-jd" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-kuaishou" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-lark" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "mp-qq" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "quickapp-webview-huawei" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    "quickapp-webview-union" : {
+        "uniStatistics" : {
+            "enable" : false
+        }
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="message-container"></div>
+  <form id="message-form">
+    <input type="text" id="message-input">
+    <button type="submit">发送</button>
+  </form>
+  <script src="app.js"></script>
+  <script>
+    const ws = new WebSocket('ws://localhost:8080'); // 连接WebSocket服务器，更改地址以匹配你的服务器地址  
+    const messageContainer = document.getElementById('message-container');
+    const messageForm = document.getElementById('message-form');
+    const messageInput = document.getElementById('message-input');
+
+    ws.onopen = () => {
+      console.log('Connected to WebSocket server.');
+    };
+
+    ws.onmessage = (message) => {
+      const receivedMessage = JSON.parse(message.data); // 接收从服务器发送过来的消息  
+      messageContainer.innerHTML += `<p>${receivedMessage.username}: ${receivedMessage.message}</p>`; // 在页面上显示接收到的消息  
+    };
+
+    messageForm.addEventListener('submit', (event) => { // 当提交表单时，发送消息到服务器  
+      event.preventDefault(); // 阻止表单默认提交行为  
+      const message = messageInput.value;
+      const username = prompt('输入你的用户名:'); // 提示用户输入用户名，用于在服务器上标识发送者  
+      ws.send(JSON.stringify({username, message})); // 发送消息到服务器，使用JSON序列化消息对象，因为WebSocket只能发送二进制数据或字符串数据  
+      messageInput.value = ''; // 清空输入框  
+    });
+  </script>
+</body>
+
+</html>
+
+moon area recycle domain normal sure clock screen liquid situate material rain

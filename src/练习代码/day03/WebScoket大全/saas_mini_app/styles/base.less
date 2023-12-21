@@ -1,0 +1,55 @@
+/**
+ * 公共样式在行内直接使用
+ */
+
+/* 文本省略号 */
+.overflow-hidden {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 文本省略号2 */
+.overflow-wrap {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+
+    /* autoprefixer: ignore next */
+    -webkit-box-orient: vertical;
+}
+
+/* 文本强制换行 */
+.overflow-break {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+/* 兼容space-evenly */
+.space-evenly {
+    justify-content: space-between;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+    }
+}
+
+/* 兼容背景图 */
+.background-box {
+    background-size: 100% 100%;
+    background-position: center;
+	background-repeat: no-repeat;
+}
+
+.gray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+}

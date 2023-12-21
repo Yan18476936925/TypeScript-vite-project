@@ -1,0 +1,219 @@
+.school-fellow-List {
+	position: relative;
+	min-height: 100vh;
+	width: 750rpx;
+	margin: 0 auto;
+	background: #F7F9FB;
+	.search-box {
+		width: 750rpx;
+		background: #FFFFFF;
+		padding: 8rpx 0;
+		box-sizing: border-box;
+		.search-base {
+			width: 750rpx;
+			height: 88rpx;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding: 0 24rpx;
+			box-sizing: border-box;
+			
+			.screen-btn {
+				font-size: 24rpx;
+				color: #FE0808;
+				font-weight: 500;
+				padding: 0 32rpx 0 8rpx;
+				box-sizing: border-box;
+				white-space: nowrap;
+	
+				.screen-icon {
+					width: 21rpx;
+					height: 24rpx;
+					vertical-align: middle;
+					margin-right: 10rpx;
+				}
+			}
+			.search-bg {
+				height: 56rpx;
+				width: 558rpx;
+				background: #F7F9FB;
+				border-radius: 28rpx;
+				margin-right: 28rpx;
+				display: flex;
+				align-items: center;
+				padding: 0 24rpx;
+				box-sizing: border-box;
+			}
+			.search-icon {
+				width: 22rpx;
+				height: 22rpx;
+				margin-right: 18rpx;
+			}
+			.search-input {
+				height: 56rpx;
+				width: 432rpx;
+				color: #0E0F12;
+				// padding-left: 30rpx;
+				// box-sizing: border-box;
+				font-size: 28rpx;
+				letter-spacing: 0;
+			}
+			.search-btn {
+				width: 100rpx;
+				height: 56rpx;
+				line-height: 56rpx;
+				font-family:  PingFangSC-Regular;
+				font-size: 24rpx;
+				color: #FFFFFF;
+				font-weight: 500;
+				text-align: center;
+				background: #2D241A;
+				border-radius: 28rpx;
+				position: absolute;
+				right: 28rpx;
+				top: 24rpx;
+			}
+		}
+		.search-other {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			padding-left: 24rpx;
+			box-sizing: border-box;
+			overflow-x: scroll;
+			.search-other-item {
+				height: 50rpx;
+				line-height: 50rpx;
+				font-size: 24rpx;
+				padding: 0 32rpx;
+				box-sizing: border-box;
+				border-radius: 25rpx;
+				font-family:  PingFangSC-Regular;
+				font-weight: 500;
+				margin-right: 24rpx;
+				&-active {
+					color: #F8172A;
+					background: #FFEBEC;
+				}
+				&-default {
+					color: #2D241A;
+					background: #F7F9FB;
+				}
+			}
+		}
+	}
+	.fellow-List {
+		width: 702rpx;
+		margin: 20rpx auto 0;
+		.fellow-blank{
+			width: 100%;
+			height: 50vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.icon{
+				width: 106rpx;
+				height: 114rpx;
+				background-image: url("@/static/newImage/blank/checkError.png");
+			}
+			.text{
+				margin-top: 20rpx;
+				font-size: 28rpx;
+				text-align: center;
+				color: #000000;
+				letter-spacing: 0;
+				font-weight: 400;
+			}
+		}
+	}
+	.share-btn {
+		// width: 134rpx;
+		width: 142rpx;
+		height: 142rpx;
+		// height: 142rpx;
+		position: fixed;
+		right: 0;
+		> button {
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		> image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.school-fellow-share {
+		bottom: 344rpx;
+	}
+	.class-share {
+		bottom: 218rpx;
+	}
+	.screen-sheet {
+		overflow: scroll;
+		.screen-header {
+			font-size: 36rpx;
+			color: #000000;
+			text-align: center;
+			line-height: 36rpx;
+			font-weight: 600;
+			margin-top: 10rpx;
+			margin-bottom: 54rpx;
+		}
+		.screen-content {
+			max-width: 100vw;
+			height: 800rpx;
+			padding-bottom: 154rpx;
+			box-sizing: border-box;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			// background-color: red;
+			.screen-content-item {
+				margin-bottom: 32rpx;
+				&:last-child {
+					margin-bottom: 0rpx;
+				}
+			}
+		}
+		.screen-footer {
+			width: 750rpx;
+			height: 154rpx;
+			background: #FFFFFF;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			box-shadow: 0 0 32px 0 rgba(223,185,193,0.23);
+			border-radius: 40rpx 40rpx 0 0;
+			&-btn {
+				height: 84rpx;
+				font-size: 24rpx;
+				color: #FDFEFE;
+				font-weight: 600;
+				line-height: 84rpx;
+				border-radius: 12rpx;
+				text-align: center;
+				margin: 0 26rpx;
+			}
+			&-border {
+				width: 284rpx;
+				color: #0E0F12;
+				background: #FDFEFE;
+				border: 2rpx solid #0E0F12;
+			}
+			&-bg {
+				width: 322rpx;
+				background: #0E0F12;
+			}
+		}
+	}
+}

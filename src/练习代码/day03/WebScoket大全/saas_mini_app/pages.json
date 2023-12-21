@@ -1,0 +1,259 @@
+{
+	"pages": [
+		// 底部tabbar
+		{
+			"path": "pages/home/main",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/schoolFellow/main",
+			"style": {
+				"navigationBarTitleText": "校友圈"
+				// "navigationStyle": "custom",
+			}
+		},
+		{
+			"path": "pages/sharePage/main",
+			"style": {
+				"navigationBarTitleText": "邀请"
+				// "navigationStyle": "custom",
+			}
+		},
+		{
+			"path": "pages/invitationPage/main",
+			"style": {
+				"navigationBarTitleText": "深大会"
+				// "navigationStyle": "custom",
+			}
+		},
+		{
+			"path": "pages/company/main",
+			"style": {
+				"navigationBarTitleText": "企业"
+			}
+		},
+		{
+			"path": "pages/me/main",
+			"style": {
+				// "enablePullDownRefresh": true,
+				// "navigationBarTitleText": "个人中心",
+				// "navigationBarBackgroundColor": "#E565AB",
+				// "navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/me/joinData",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "入会资料"
+			}
+		},
+		{
+
+			"path": "pages/me/personalData",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "个人资料"
+			}
+		},
+		{
+			"path": "pages/me/editInfo",
+			"style": {
+				"navigationBarBackgroundColor": "#FFFFFF",
+				"navigationBarTitleText": "修改资料"
+			}
+		},
+		{
+			"path": "pages/loginPage/main",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/webView/main"
+		}
+	],
+	"subPackages": [{
+			"root": "otherPackage",
+			"name": "otherPackage",
+			"pages": [{
+					"path": "pages/siteInfo/main",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "校友场地"
+					}
+				},
+				{
+					"path": "pages/siteInfo/detail",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "场地详情"
+					}
+				},
+				{
+					"path": "pages/club/club",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "校友俱乐部"
+					}
+				},
+				{
+					"path": "pages/club/clubDetails",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "俱乐部详情"
+					}
+				},
+				{
+					"path": "pages/applyMember/applyAgreement",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "深大会"
+					}
+				},
+				{
+					"path": "pages/applyMember/userInfo",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "个人信息"
+					}
+				},
+				{
+					"path": "pages/applyMember/stuInfo",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "学籍信息"
+					}
+				},
+				{
+					"path": "pages/applyMember/workInfo",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "工作信息"
+					}
+				},
+				{
+					"path": "pages/applyMember/signConfirm",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "签名确认"
+					}
+				},
+				{
+					"path": "pages/company/editCompany",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "企业资料"
+					}
+				},
+				{
+					"path": "pages/company/companyDetails",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "企业详情"
+					}
+				},
+				{
+					"path": "pages/medalHall/main",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "勋章馆"
+					}
+				}
+			]
+		},
+		{
+			"root": "personalInfoPackage",
+			"name": "personalInfoPackage",
+			"pages": [{
+					"path": "pages/message/main",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "我的消息"
+					}
+				},
+				{
+					"path": "pages/myInvite/main",
+					"style": {
+						"navigationBarBackgroundColor": "#FFFFFF",
+						"navigationBarTitleText": "我的邀请",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "pages/contributionList/main",
+					"style": {
+						"enablePullDownRefresh": true,
+						"navigationStyle": "custom",
+						"navigationBarTextStyle":"white"
+					}
+				}
+			]
+		},
+		{
+			"root": "schoolFellowPackage",
+			"name": "schoolFellowPackage",
+			"pages": [{
+					"path": "pages/schoolFellowList/main",
+					"style": {
+						"navigationBarTitleText": "深大会",
+						"enablePullDownRefresh": true
+						// "navigationStyle": "custom",
+					}
+				},
+				{
+					"path": "pages/schoolFellowDetails/main",
+					"style": {
+						"navigationBarTitleText": "名片"
+						// "navigationStyle": "custom",
+					}
+				}
+			]
+		}
+	],
+	"tabBar": {
+		"color": "#666666",
+		"backgroundColor": "#FFFFFF",
+		"selectedColor": "#000000",
+		"borderStyle": "white",
+		"position": "bottom",
+		"list": [{
+				"text": "首页",
+				"pagePath": "pages/home/main",
+				"iconPath": "static/tabs/home.png",
+				"selectedIconPath": "static/tabs/home_p.png"
+			},
+			{
+				"text": "校友",
+				"pagePath": "pages/schoolFellow/main",
+				"iconPath": "static/tabs/xingqiu.png",
+				"selectedIconPath": "static/tabs/xingqiu_p.png"
+			},
+			{
+				"text": "企业",
+				"pagePath": "pages/company/main",
+				"iconPath": "static/tabs/company.png",
+				"selectedIconPath": "static/tabs/company_p.png"
+			},
+			{
+				"text": "我的",
+				"pagePath": "pages/me/main",
+				"iconPath": "static/tabs/me.png",
+				"selectedIconPath": "static/tabs/me_p.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"backgroundTextStyle": "dark",
+		"navigationBarBackgroundColor": "#ffffff",
+		"navigationBarTextStyle": "black"
+	}
+}

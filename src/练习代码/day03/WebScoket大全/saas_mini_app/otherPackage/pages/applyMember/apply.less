@@ -1,0 +1,154 @@
+.apply-page{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	background-color: #F7F9FB;
+	.info-table{
+		flex: 1;
+		overflow-y: scroll;
+		overflow-x: hidden;
+		background-color: #F7F9FB;
+		border-radius: 24rpx;
+		display: flex;
+		flex-direction: column;
+		// justify-content: space-between;
+		&::-webkit-scrollbar{
+			display: none;
+		}
+		.info-content{
+			background: #FFFFFF;
+			border-radius: 24rpx;
+			width: 100vw;
+			padding: 50rpx 40rpx 50rpx 48rpx;
+			box-sizing: border-box;
+			margin-bottom: 20rpx;
+			position: relative;
+			.info-img{
+				// background: #F7F9FB;
+				border-radius: 50%;
+				overflow: hidden;
+				width: 156rpx;
+				height: 156rpx;
+				position: absolute;
+				top: 36rpx;
+				right: 40rpx;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.up-img{
+					background-image: url("@/static/newImage/home/pic.png");
+					width: 100%;
+					height: 100%;
+				}
+				image{
+					max-height: 100%;
+				}
+			}
+			.info-input,.info-radio,.info-picker,.info-textarea {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				box-sizing: border-box;
+				&:not(:last-child){
+					margin-bottom: 60rpx;
+				}
+			}
+			.info-textarea{
+				align-items: flex-start;
+			}
+			.right-padding{
+				padding-right: 200rpx;
+			}
+			.info-text{
+				display: inline-block;
+				font-size: 28rpx;
+				color: #0E0F12;
+				font-weight: 600;
+				text-align: justify;
+				text-align-last: justify;
+				letter-spacing: 1;
+				width: 126rpx;		// 设置justify一定要设置宽度
+				min-width: 126rpx;
+				margin-right: 28rpx;
+			}
+			.item-input{
+				flex: 1;
+				border: none;
+				font-family: Gilroy-Medium;
+				font-size: 32rpx;
+				color: #000000;
+				line-height: 34rpx;
+				font-weight: 600;
+			}
+			.radio-btn{
+				display: flex;
+				align-items: center;
+				flex: 1;
+				.radio-item{
+					background: #F7F9FB;
+					border-radius: 20rpx;
+					width: 76rpx;
+					height: 36rpx;
+					font-size: 26rpx;
+					color: #999999;
+					font-weight: 600;
+					text-align: center;
+					line-height: 36rpx;
+					margin-right: 28rpx;
+					&.choose-btn{
+						background: #F40012;
+						color: #FFFFFF;
+					}
+				}
+			}
+			.info-picker-text{
+				width: 100%;
+				font-size: 28rpx;
+				color: #DBDBDB;
+				font-weight: 600;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				picker{
+					width: 100%;
+				}
+				&::after{
+					content: "";
+					width: 8rpx;
+					height: 16rpx;
+					background-image: url("@/static/newImage/public/arrows.png");
+					background-position: center;
+					background-size: 100%;
+					background-repeat: no-repeat;
+				}
+				&.hava-value{
+					font-family: Gilroy-Medium;
+					font-size: 32rpx;
+					color: #000000;
+					line-height: 34rpx;
+					font-weight: 600;
+				}
+			}
+			.item-textarea{
+				background: #F7F9FB;
+				border-radius: 4rpx;
+				width: 100%;
+				height: 180rpx;
+				padding: 15rpx;
+			}
+		}
+	}
+	.next-btn{
+		background: #0E0F12;
+		border-radius: 46rpx;
+		width: 524rpx;
+		height: 84rpx;
+		margin: 50rpx auto 64rpx;
+		font-size: 28rpx;
+		color: #FFFFFF;
+		font-weight: 600;
+		text-align: center;
+		line-height: 84rpx;
+	}
+}
